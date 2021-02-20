@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+
+  <!-- Title -->
+  <title>Gymnastics</title>
+
+  <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700,900|Rubik:300,400,500" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles-merged.css">
+  <link rel="stylesheet" href="css/style.min.css">
+  <link rel="stylesheet" href="css/custom.css">
+
+  <!--[if lt IE 9]>
+  <script src="js/vendor/html5shiv.min.js"></script>
+  <script src="js/vendor/respond.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+
+<!-- START: header -->
+
+<header role="banner" class="probootstrap-header">
+  <div class="container-fluid">
+    <a href="index.html" class="probootstrap-logo">
+      Health
+    </a>
+
+    <a href="#" class="probootstrap-burger-menu visible-xs"><i></i></a>
+    <div class="mobile-menu-overlay"></div>
+
+    <nav role="navigation" class="probootstrap-nav hidden-xs">
+      <ul class="probootstrap-main-nav">
+        <li class="active"><a href="index.html">Main</a></li>
+        <li><a href="contact.html">Contacts</a></li>
+        <li><a href="terms.html">Terms and conditions</a></li>
+        <li><a href="policy.html">Privacy policy</a></li>
+      </ul>
+      <ul class="probootstrap-header-social hidden-xs">
+        <li><a href="#"><i class="icon-twitter"></i></a></li>
+        <li><a href="#"><i class="icon-facebook2"></i></a></li>
+        <li><a href="#"><i class="icon-instagram2"></i></a></li>
+      </ul>
+      <div class="extra-text visible-xs">
+        <a href="#" class="probootstrap-burger-menu"><i></i></a>
+        <h5>Social media</h5>
+        <ul class="social-buttons">
+          <li><a href="#"><i class="icon-twitter"></i></a></li>
+          <li><a href="#"><i class="icon-facebook2"></i></a></li>
+          <li><a href="#"><i class="icon-instagram2"></i></a></li>
+        </ul>
+        <p><small>&copy; Copyright 2017. All Rights Reserved.</small></p>
+      </div>
+    </nav>
+  </div>
+</header>
+<!-- END: header -->
+
+<main>
+  <!-- Home Content -->
+  <div id="content" class="site-content" style="padding-top: 150px;">
+    <div class="col-lg-10 col-md-9 col-12 body_block  align-content-center" style="padding-left: 50px;">
+      <div>
+        <div class="img_card">
+          <div class="row justify-content-center">
+            <div class="col-md-8 col-7 content_section">
+              <!--=================== contact info and form start====================-->
+              <div class="content_box">
+                <div class="content_box_inner">
+                  <div>
+                    <h3>
+                      Thank you for your application!
+                    </h3>
+                  </div>
+                </div>
+              </div>
+              <!--=================== contact info and form end====================-->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+
+<footer class="probootstrap-footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <p class="mb0">&copy; Copyright 2017. All Rights Reserved.</p>
+      </div>
+      <div class="col-md-6">
+        <p class="mb0 probootstrap-back-to-top"><a href="#" class="js-backtotop">Back to top</a></p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<div class='cookie-banner'>
+  <p>
+    The site uses cookies. They allow us to recognize you and get information about your user experience.By continuing to browse the site, I agree to the use of cookies by the site owner in accordance with  <a target="_blank" href="https://en.wikipedia.org/wiki/HTTP_cookie">Cookie policy</a>
+  </p>
+  <button class='close-cookie'>&times;</button>
+</div>
+
+<script src="js/scripts.min.js"></script>
+<script src="js/main.min.js"></script>
+<script src="js/custom.js"></script>
+
+<script>
+  window.onload = function () {
+    jQuery('.close-cookie').click(function () {
+      jQuery('.cookie-banner').fadeOut();
+    })
+  }
+
+  let elems = document.querySelectorAll('.server-name');
+  elems.forEach((elem) => {
+    elem.innerHTML = window.location.hostname
+  })
+</script>
+
+</body>
+</html>

@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+
+  <!-- Title -->
+  <title>Tone up</title>
+
+  <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700,900|Rubik:300,400,500" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles-merged.css">
+  <link rel="stylesheet" href="css/style.min.css">
+  <link rel="stylesheet" href="css/custom.css">
+
+  <!--[if lt IE 9]>
+  <script src="js/vendor/html5shiv.min.js"></script>
+  <script src="js/vendor/respond.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+
+<!-- START: header -->
+
+<header role="banner" class="probootstrap-header">
+  <div class="container-fluid">
+    <a href="index.html" class="probootstrap-logo">
+      Bobs
+    </a>
+
+    <a href="#" class="probootstrap-burger-menu visible-xs"><i></i></a>
+    <div class="mobile-menu-overlay"></div>
+
+    <nav role="navigation" class="probootstrap-nav hidden-xs">
+      <ul class="probootstrap-main-nav">
+        <li><a href="index.html">Main</a></li>
+        <li class="active"><a href="contact.html">Contacts</a></li>
+        <li><a href="terms.html">Terms and conditions</a></li>
+        <li><a href="policy.html">Privacy policy</a></li>
+      </ul>
+      <ul class="probootstrap-header-social hidden-xs">
+        <li><a href="#"><i class="icon-twitter"></i></a></li>
+        <li><a href="#"><i class="icon-facebook2"></i></a></li>
+        <li><a href="#"><i class="icon-instagram2"></i></a></li>
+      </ul>
+      <div class="extra-text visible-xs">
+        <a href="#" class="probootstrap-burger-menu"><i></i></a>
+        <h5>Social media</h5>
+        <ul class="social-buttons">
+          <li><a href="#"><i class="icon-twitter"></i></a></li>
+          <li><a href="#"><i class="icon-facebook2"></i></a></li>
+          <li><a href="#"><i class="icon-instagram2"></i></a></li>
+        </ul>
+        <p><small>&copy; Copyright 2017. All Rights Reserved.</small></p>
+      </div>
+    </nav>
+  </div>
+</header>
+<!-- END: header -->
+
+<main>
+  <section id="next-section" class="probootstrap-section" style="padding-top: 120px;">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <form action="thanks.html" method="post" class="probootstrap-form">
+            <div class="row">
+              <div class="col-md-6">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="fname" name="fname" placeholder="Name">
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="lname" name="lname"
+                         placeholder="Lastname">
+                </div>
+              </div>
+            </div>
+            <div class="form-group">
+              <input type="email" class="form-control" id="email" name="email" placeholder="Email">
+            </div>
+
+            <div class="form-group">
+              <input type="text" class="form-control" id="phone" name="phone" placeholder="Topic">
+            </div>
+
+            <div class="form-group">
+              <textarea cols="30" rows="10" class="form-control" id="message" name="message"
+                        placeholder="The text of the comment"></textarea>
+            </div>
+
+            <input type="checkbox" id="terms" name="copy" style="-webkit-appearance: checkbox;">
+            <a href="policy.html" target="_blank">
+              I have read and agree to the terms of the user agreement
+            </a>
+
+            <div class="form-group">
+              <input type="submit" class="btn btn-primary" id="submit" name="submit" value="Send">
+            </div>
+          </form>
+        </div>
+        <div class="col-md-5 col-md-push-1">
+          <h3 class="mt0">Contacts</h3>
+          <ul class="probootstrap-contact-info">
+            <li><i class="icon-location2"></i> <span>494 Ella Brooks
+South Georgettebury, DE 82561</span></li>
+            <li><i class="icon-mail"></i><span>fausto24@hotmail.com</span></li>
+            <li><i class="icon-phone2"></i><span>+1081530380097</span></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="probootstrap-footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <p class="mb0">&copy; Copyright 2017. All Rights Reserved.</p>
+      </div>
+      <div class="col-md-6">
+        <p class="mb0 probootstrap-back-to-top"><a href="#" class="js-backtotop">Back to top</a></p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<div class='cookie-banner'>
+  <p>
+    The site uses cookies. They allow us to recognize you and get information about your user experience.By continuing to browse the site, I agree to the use of cookies by the site owner in accordance with  <a target="_blank" href="https://en.wikipedia.org/wiki/HTTP_cookie">Cookie policy</a>
+  </p>
+  <button class='close-cookie'>&times;</button>
+</div>
+
+<script src="js/scripts.min.js"></script>
+<script src="js/main.min.js"></script>
+<script src="js/custom.js"></script>
+
+<script>
+  window.onload = function () {
+    jQuery('.close-cookie').click(function () {
+      jQuery('.cookie-banner').fadeOut();
+    })
+  }
+
+  let elems = document.querySelectorAll('.server-name');
+  elems.forEach((elem) => {
+    elem.innerHTML = window.location.hostname
+  })
+</script>
+
+</body>
+</html>
